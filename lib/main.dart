@@ -10,17 +10,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My First App'),
+          title: Text('My Flutter App'),
+          centerTitle: true,
+          backgroundColor: Colors.red[900],
         ),
-        body: Column(
-          children: [
-            Text(
-              'questions[questionIndex]',
-            ),
-            RaisedButton(
-              child: Text('Answer 1'),
-            ),
-          ],
+        body: Center(child: Image.asset('assets/image1.jpg')),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Text('click'),
+          backgroundColor: Colors.red[900],
         ),
       ),
     );
